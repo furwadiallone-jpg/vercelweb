@@ -7,6 +7,10 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.get("/",(req,res) =>{
+  res.sendFile(path.resolve(__dirname, '../public/home.html'))
+})
+
 /* SERVER */
 app.listen(port, () => {
 console.log(`Web Online port ${port}`)
