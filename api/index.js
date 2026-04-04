@@ -11,6 +11,11 @@ app.get("/",(req,res) =>{
   res.sendFile(path.resolve(__dirname, '../public/home.html'))
 })
 
+// Pastikan ini diletakkan di bawah semua route lainnya
+app.use((req, res) => {
+  res.status(404).sendFile(path.resolve(__dirname, '../public/404.html'));
+}
+
 /* SERVER */
 app.listen(port, () => {
 console.log(`Web Online port ${port}`)
