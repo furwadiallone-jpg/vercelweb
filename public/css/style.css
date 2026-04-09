@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding: 5px 0;
+    background-color:  rgb(3, 146, 3) ;
+}
+.medsos ul li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding:15px 0;
+    color:  rgb(3, 146, 3) ;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li {
+    padding: 25px 20px;
+    display: inline-block;
+}
+header ul li a:hover {
+    background-color:  rgb(3, 146, 3) ;
+    color: #ffffff;
+}
+.active {
+    background-color:  rgb(3, 146, 3) ;
+    color: #fff;
+}
+.banner {
+    height: 50vh;
+    background-image: url('../img/l1.jpg' );
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 255, 255, 0.363);
+}
+.banner h2 {
+    color: #7a7a7a;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid #7a7a7a;
+    margin-bottom: 20px;
+}
+section {
+    padding: 50px 0;
+}
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+}
+.tentang,
+.layanan {
+    padding-bottom: 100px;
+}
+.tentang p {
+    color: #000000;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-align: left;
+}
+.tentang h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.tentang h3{
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+.layanan p {
+    color: #666;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-align: left;
+}
+.fasilitas {
+    padding-bottom: 100px;
+}
+h4 {
+    color: #000;
+}
+.fasilitas p {
+    color: #666;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-align: left;
+}
+footer {
+    padding: 30px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.bg-loader {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color:  rgb(3, 146, 3) ;
+    border-right-color:  rgb(3, 146, 3) ;
+    border-bottom-color:  rgb(3, 146, 3) ;
+    animation: puterin .8s linear infinite;
+}
+.label {
+    background-color:  rgb(3, 146, 3) ;
+    color: #fff;
+}
+@keyframes puterin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.box {
+    color:rgb(255, 255, 255);
+}
+.box .col-4 {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    text-align: center;
+    float: left;
+}
+.box .col-3 {
+    width: 50%;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+.kontak {
+    background-color: rgb(67, 148, 240);
+}
+.kontak p {
+    text-align: left;
+}
+.kontak h4 {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px){ 
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        text-align: center;
+        float: none;
+    }
+    header ul {
+        text-align: center;
+        float: none;
+    }
+    .box .col-3 {
+        width: 100%;
+        float: none;
+    }
+    .box .col-4 {
+        width: 100%;
+        float: none;
+    }
+}
